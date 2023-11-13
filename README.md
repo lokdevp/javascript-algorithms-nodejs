@@ -1,4 +1,5 @@
 # JavaScript Algorithms and Data Structures
+## Change from original: Can be run using nodejs and console.log in local
 
 > 🇺🇦 UKRAINE [IS BEING ATTACKED](https://war.ukraine.ua/) BY RUSSIAN ARMY. CIVILIANS ARE GETTING KILLED. RESIDENTIAL AREAS ARE GETTING BOMBED.
 > - Help Ukraine via:
@@ -295,13 +296,12 @@ Also make sure that you're using a correct Node version (`>=16`). If you're usin
 
 **Playground**
 
-You may play with data-structures and algorithms in `./src/playground/playground.js` file and write
-tests for it in `./src/playground/__test__/playground.test.js`.
+You may play with data-structures and algorithms in `./src/playground/playground.js` file 
 
 Then just simply run the following command to test if your playground code works as expected:
 
 ```
-npm test -- 'playground'
+node src/playground/playground.js
 ```
 
 ## Useful Information

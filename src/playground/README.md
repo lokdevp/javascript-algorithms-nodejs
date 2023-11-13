@@ -1,11 +1,10 @@
 # Playground
 
 You may use `playground.js` file to play with data
-structures and algorithms. The code from `playground.js` may
-be tested in `./__test__/playground.test.js` file.
+structures and algorithms. The code from `playground.js` 
 
-To run tests simply run:
+To run:
 
 ```
-npm test -- -t 'playground'
+node src/playground/playground.js
 ```
