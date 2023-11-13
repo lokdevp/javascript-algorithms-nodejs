@@ -2,7 +2,7 @@
  * @param {number} number
  * @return {number}
  */
-export default function factorial(number) {
+function factorial(number) {
   let result = 1;
 
   for (let i = 2; i <= number; i += 1) {
@@ -11,3 +11,4 @@ export default function factorial(number) {
 
   return result;
 }
+module.exports = factorial;

@@ -1,4 +1,4 @@
-import countSetBits from './countSetBits';
+const countSetBits = require('./countSetBits');
 
 /**
  * Counts the number of bits that need to be change in order
@@ -8,6 +8,7 @@ import countSetBits from './countSetBits';
  * @param {number} numberB
  * @return {number}
  */
-export default function bitsDiff(numberA, numberB) {
+function bitsDiff(numberA, numberB) {
   return countSetBits(numberA ^ numberB);
 }
+module.exports = bitsDiff;

@@ -5,7 +5,7 @@
  * @param {string} string2
  * @return {string}
  */
-export default function longestCommonSubstring(string1, string2) {
+function longestCommonSubstring(string1, string2) {
   // Convert strings to arrays to treat unicode symbols length correctly.
   // For example:
   // '𐌵'.length === 2
@@ -66,3 +66,4 @@ export default function longestCommonSubstring(string1, string2) {
 
   return longestSubstring;
 }
+module.exports = longestCommonSubstring;

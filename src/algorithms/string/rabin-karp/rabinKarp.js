@@ -1,11 +1,11 @@
-import PolynomialHash from '../../cryptography/polynomial-hash/PolynomialHash';
+const PolynomialHash = require('../../cryptography/polynomial-hash/PolynomialHash');
 
 /**
  * @param {string} text - Text that may contain the searchable word.
  * @param {string} word - Word that is being searched in text.
  * @return {number} - Position of the word in text.
  */
-export default function rabinKarp(text, word) {
+function rabinKarp(text, word) {
   const hasher = new PolynomialHash();
 
   // Calculate word hash that we will use for comparison with other substring hashes.
@@ -40,3 +40,4 @@ export default function rabinKarp(text, word) {
 
   return -1;
 }
+module.exports = rabinKarp;

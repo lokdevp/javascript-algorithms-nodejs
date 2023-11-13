@@ -2,6 +2,7 @@
  * @param {number} number
  * @return {boolean}
  */
-export default function isEven(number) {
+function isEven(number) {
   return (number & 1) === 0;
 }
+module.exports = isEven;

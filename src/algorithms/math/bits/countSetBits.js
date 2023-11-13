@@ -2,7 +2,7 @@
  * @param {number} originalNumber
  * @return {number}
  */
-export default function countSetBits(originalNumber) {
+function countSetBits(originalNumber) {
   let setBitsCount = 0;
   let number = originalNumber;
 
@@ -16,3 +16,4 @@ export default function countSetBits(originalNumber) {
 
   return setBitsCount;
 }
+module.exports = countSetBits;

@@ -2,7 +2,7 @@
  * @param {*[]} permutationOptions
  * @return {*[]}
  */
-export default function permutateWithoutRepetitions(permutationOptions) {
+function permutateWithoutRepetitions(permutationOptions) {
   if (permutationOptions.length === 1) {
     return [permutationOptions];
   }
@@ -29,3 +29,4 @@ export default function permutateWithoutRepetitions(permutationOptions) {
 
   return permutations;
 }
+module.exports = permutateWithoutRepetitions;

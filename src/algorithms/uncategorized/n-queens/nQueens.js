@@ -1,4 +1,4 @@
-import QueenPosition from './QueenPosition';
+const QueenPosition = require('./QueenPosition');
 
 /**
  * @param {QueenPosition[]} queensPositions
@@ -85,7 +85,7 @@ function nQueensRecursive(solutions, previousQueensPositions, queensCount, rowIn
  * @param {number} queensCount
  * @return {QueenPosition[][]}
  */
-export default function nQueens(queensCount) {
+function nQueens(queensCount) {
   // Init NxN chessboard with zeros.
   // const chessboard = Array(queensCount).fill(null).map(() => Array(queensCount).fill(0));
 
@@ -101,3 +101,4 @@ export default function nQueens(queensCount) {
 
   return solutions;
 }
+module.exports = nQueens;

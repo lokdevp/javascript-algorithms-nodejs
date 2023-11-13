@@ -1,11 +1,11 @@
-import DisjointSet from '../../../data-structures/disjoint-set/DisjointSet';
+const DisjointSet = require('../../../data-structures/disjoint-set/DisjointSet');
 
 /**
  * Detect cycle in undirected graph using disjoint sets.
  *
  * @param {Graph} graph
  */
-export default function detectUndirectedCycleUsingDisjointSet(graph) {
+function detectUndirectedCycleUsingDisjointSet(graph) {
   // Create initial singleton disjoint sets for each graph vertex.
   /** @param {GraphVertex} graphVertex */
   const keyExtractor = (graphVertex) => graphVertex.getKey();
@@ -29,3 +29,4 @@ export default function detectUndirectedCycleUsingDisjointSet(graph) {
 
   return cycleFound;
 }
+module.exports = detectUndirectedCycleUsingDisjointSet;

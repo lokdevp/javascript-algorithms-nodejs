@@ -1,11 +1,11 @@
-import Sort from '../Sort';
+const Sort = require('../Sort');
 
 // Using charCode (a = 97, b = 98, etc), we can map characters to buckets from 0 - 25
 const BASE_CHAR_CODE = 97;
 const NUMBER_OF_POSSIBLE_DIGITS = 10;
 const ENGLISH_ALPHABET_LENGTH = 26;
 
-export default class RadixSort extends Sort {
+class RadixSort extends Sort {
   /**
    * @param {*[]} originalArray
    * @return {*[]}
@@ -150,3 +150,4 @@ export default class RadixSort extends Sort {
     return Number.isInteger(element);
   }
 }
+module.exports = RadixSort;

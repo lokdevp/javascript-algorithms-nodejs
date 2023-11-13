@@ -1,4 +1,4 @@
-export default class KnapsackItem {
+class KnapsackItem {
   /**
    * @param {Object} itemSettings - knapsack item settings,
    * @param {number} itemSettings.value - value of the item.
@@ -31,3 +31,4 @@ export default class KnapsackItem {
     return `v${this.value} w${this.weight} x ${this.quantity}`;
   }
 }
+module.exports = KnapsackItem;

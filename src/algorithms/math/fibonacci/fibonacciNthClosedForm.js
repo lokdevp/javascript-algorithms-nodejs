@@ -5,7 +5,7 @@
  * @param {number} position - Position number of fibonacci sequence (must be number from 1 to 75).
  * @return {number}
  */
-export default function fibonacciClosedForm(position) {
+function fibonacciClosedForm(position) {
   const topMaxValidPosition = 70;
 
   // Check that position is valid.
@@ -21,3 +21,4 @@ export default function fibonacciClosedForm(position) {
   // Calculate fibonacci number using Binet's formula.
   return Math.floor((phi ** position) / sqrt5 + 0.5);
 }
+module.exports = fibonacciClosedForm;

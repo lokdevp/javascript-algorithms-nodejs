@@ -1,7 +1,7 @@
 /**
  * Class that represents queen position on the chessboard.
  */
-export default class QueenPosition {
+class QueenPosition {
   /**
    * @param {number} rowIndex
    * @param {number} columnIndex
@@ -37,3 +37,4 @@ export default class QueenPosition {
     return `${this.rowIndex},${this.columnIndex}`;
   }
 }
+module.exports = QueenPosition;

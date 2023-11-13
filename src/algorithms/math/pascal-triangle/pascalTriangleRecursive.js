@@ -2,7 +2,7 @@
  * @param {number} lineNumber - zero based.
  * @return {number[]}
  */
-export default function pascalTriangleRecursive(lineNumber) {
+function pascalTriangleRecursive(lineNumber) {
   if (lineNumber === 0) {
     return [1];
   }
@@ -28,3 +28,4 @@ export default function pascalTriangleRecursive(lineNumber) {
 
   return currentLine;
 }
+module.exports = pascalTriangleRecursive;

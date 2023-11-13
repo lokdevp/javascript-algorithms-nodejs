@@ -1,4 +1,4 @@
-import longestCommonSubsequence from '../longest-common-subsequence/longestCommonSubsequence';
+const longestCommonSubsequence = require('../longest-common-subsequence/longestCommonSubsequence');
 
 /**
  * @param {string[]} set1
@@ -6,7 +6,7 @@ import longestCommonSubsequence from '../longest-common-subsequence/longestCommo
  * @return {string[]}
  */
 
-export default function shortestCommonSupersequence(set1, set2) {
+function shortestCommonSupersequence(set1, set2) {
   // Let's first find the longest common subsequence of two sets.
   const lcs = longestCommonSubsequence(set1, set2);
 
@@ -69,3 +69,4 @@ export default function shortestCommonSupersequence(set1, set2) {
 
   return supersequence;
 }
+module.exports = shortestCommonSupersequence;

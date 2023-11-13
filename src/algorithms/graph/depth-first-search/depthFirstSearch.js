@@ -62,7 +62,8 @@ function depthFirstSearchRecursive(graph, currentVertex, previousVertex, callbac
  * @param {GraphVertex} startVertex
  * @param {Callbacks} [callbacks]
  */
-export default function depthFirstSearch(graph, startVertex, callbacks) {
+function depthFirstSearch(graph, startVertex, callbacks) {
   const previousVertex = null;
   depthFirstSearchRecursive(graph, startVertex, previousVertex, initCallbacks(callbacks));
 }
+module.exports = depthFirstSearch;

@@ -1,5 +1,5 @@
-import * as mtrx from '../../math/matrix/Matrix';
-import euclideanDistance from '../../math/euclidean-distance/euclideanDistance';
+const mtrx = require('../../math/matrix/Matrix');
+const euclideanDistance = require('../../math/euclidean-distance/euclideanDistance');
 
 /**
  * Classifies the point in space based on k-Means algorithm.
@@ -8,7 +8,7 @@ import euclideanDistance from '../../math/euclidean-distance/euclideanDistance';
  * @param {number} k - number of clusters
  * @return {number[]} - the class of the point
  */
-export default function KMeans(
+function KMeans(
   data,
   k = 1,
 ) {
@@ -83,3 +83,4 @@ export default function KMeans(
   // Return the clusters assigned.
   return classes;
 }
+module.exports = KMeans;

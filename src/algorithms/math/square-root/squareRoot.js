@@ -6,7 +6,7 @@
  * @param [tolerance] - how many precise numbers after the floating point we want to get.
  * @return {number}
  */
-export default function squareRoot(number, tolerance = 0) {
+function squareRoot(number, tolerance = 0) {
   // For now we won't support operations that involves manipulation with complex numbers.
   if (number < 0) {
     throw new Error('The method supports only positive integers');
@@ -38,3 +38,4 @@ export default function squareRoot(number, tolerance = 0) {
   // Cut off undesired floating digits and return the root value.
   return Math.round(root * (10 ** tolerance)) / (10 ** tolerance);
 }
+module.exports = squareRoot;

@@ -1,4 +1,4 @@
-import LinkedList from '../linked-list/LinkedList';
+const LinkedList = require('../linked-list/LinkedList');
 
 // Hash table size directly affects on the number of collisions.
 // The bigger the hash table size the less collisions you'll get.
@@ -6,7 +6,7 @@ import LinkedList from '../linked-list/LinkedList';
 // are being handled.
 const defaultHashTableSize = 32;
 
-export default class HashTable {
+class HashTable {
   /**
    * @param {number} hashTableSize
    */
@@ -119,3 +119,4 @@ export default class HashTable {
     }, []);
   }
 }
+module.exports = HashTable;

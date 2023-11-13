@@ -1,4 +1,4 @@
-import BinarySearchTree from '../binary-search-tree/BinarySearchTree';
+const BinarySearchTree = require('../binary-search-tree/BinarySearchTree');
 
 // Possible colors of red-black tree nodes.
 const RED_BLACK_TREE_COLORS = {
@@ -9,7 +9,7 @@ const RED_BLACK_TREE_COLORS = {
 // Color property name in meta information of the nodes.
 const COLOR_PROP_NAME = 'color';
 
-export default class RedBlackTree extends BinarySearchTree {
+class RedBlackTree extends BinarySearchTree {
   /**
    * @param {*} value
    * @return {BinarySearchTreeNode}
@@ -321,3 +321,4 @@ export default class RedBlackTree extends BinarySearchTree {
     secondNode.meta.set(COLOR_PROP_NAME, firstColor);
   }
 }
+module.exports = RedBlackTree;

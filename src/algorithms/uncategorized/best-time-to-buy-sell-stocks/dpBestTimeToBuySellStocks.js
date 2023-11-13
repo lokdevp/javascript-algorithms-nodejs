@@ -22,4 +22,4 @@ const dpBestTimeToBuySellStocks = (prices, visit = () => {}) => {
   return lastSold;
 };
 
-export default dpBestTimeToBuySellStocks;
+module.exports = dpBestTimeToBuySellStocks;

@@ -1,6 +1,6 @@
-import LinkedList from '../linked-list/LinkedList';
+const LinkedList = require('../linked-list/LinkedList');
 
-export default class GraphVertex {
+class GraphVertex {
   /**
    * @param {*} value
    */
@@ -136,3 +136,4 @@ export default class GraphVertex {
     return callback ? callback(this.value) : `${this.value}`;
   }
 }
+module.exports = GraphVertex;

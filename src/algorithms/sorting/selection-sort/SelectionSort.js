@@ -1,6 +1,6 @@
-import Sort from '../Sort';
+const Sort = require('../Sort');
 
-export default class SelectionSort extends Sort {
+class SelectionSort extends Sort {
   sort(originalArray) {
     // Clone original array to prevent its modification.
     const array = [...originalArray];
@@ -30,3 +30,4 @@ export default class SelectionSort extends Sort {
     return array;
   }
 }
+module.exports = SelectionSort;

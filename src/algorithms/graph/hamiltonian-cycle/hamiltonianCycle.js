@@ -1,4 +1,4 @@
-import GraphVertex from '../../../data-structures/graph/GraphVertex';
+const GraphVertex = require('../../../data-structures/graph/GraphVertex');
 
 /**
  * @param {number[][]} adjacencyMatrix
@@ -102,7 +102,7 @@ function hamiltonianCycleRecursive({
  * @param {Graph} graph
  * @return {GraphVertex[][]}
  */
-export default function hamiltonianCycle(graph) {
+function hamiltonianCycle(graph) {
   // Gather some information about the graph that we will need to during
   // the problem solving.
   const verticesIndices = graph.getVerticesIndices();
@@ -132,3 +132,4 @@ export default function hamiltonianCycle(graph) {
   // Return found cycles.
   return cycles;
 }
+module.exports = hamiltonianCycle;

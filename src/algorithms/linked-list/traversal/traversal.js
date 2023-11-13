@@ -8,7 +8,7 @@
  * @param {LinkedList} linkedList
  * @param {traversalCallback} callback
  */
-export default function traversal(linkedList, callback) {
+function traversal(linkedList, callback) {
   let currentNode = linkedList.head;
 
   while (currentNode) {
@@ -16,3 +16,4 @@ export default function traversal(linkedList, callback) {
     currentNode = currentNode.next;
   }
 }
+module.exports = traversal;

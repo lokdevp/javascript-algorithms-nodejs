@@ -13,7 +13,7 @@
  * @returns {{item: any, index: number}}
  */
 /* eslint-disable consistent-return */
-export default function weightedRandom(items, weights) {
+function weightedRandom(items, weights) {
   if (items.length !== weights.length) {
     throw new Error('Items and weights must be of the same size');
   }
@@ -50,3 +50,4 @@ export default function weightedRandom(items, weights) {
     }
   }
 }
+module.exports = weightedRandom;

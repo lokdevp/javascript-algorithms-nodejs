@@ -29,7 +29,7 @@ function buildPatternTable(word) {
  * @param {string} word
  * @return {number}
  */
-export default function knuthMorrisPratt(text, word) {
+function knuthMorrisPratt(text, word) {
   if (word.length === 0) {
     return 0;
   }
@@ -57,3 +57,4 @@ export default function knuthMorrisPratt(text, word) {
 
   return -1;
 }
+module.exports = knuthMorrisPratt;

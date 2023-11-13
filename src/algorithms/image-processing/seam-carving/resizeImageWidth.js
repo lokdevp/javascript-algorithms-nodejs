@@ -1,4 +1,4 @@
-import { getPixel, setPixel } from '../utils/imageData';
+const { getPixel, setPixel } = require('../utils/imageData');
 
 /**
  * The seam is a sequence of pixels (coordinates).
@@ -250,4 +250,4 @@ const resizeImageWidth = ({ img, toWidth }) => {
   return { img, size };
 };
 
-export default resizeImageWidth;
+module.exports = resizeImageWidth;

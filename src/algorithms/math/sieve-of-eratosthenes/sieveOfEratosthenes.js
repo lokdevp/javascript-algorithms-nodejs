@@ -2,7 +2,7 @@
  * @param {number} maxNumber
  * @return {number[]}
  */
-export default function sieveOfEratosthenes(maxNumber) {
+function sieveOfEratosthenes(maxNumber) {
   const isPrime = new Array(maxNumber + 1).fill(true);
   isPrime[0] = false;
   isPrime[1] = false;
@@ -34,3 +34,4 @@ export default function sieveOfEratosthenes(maxNumber) {
 
   return primes;
 }
+module.exports = sieveOfEratosthenes;

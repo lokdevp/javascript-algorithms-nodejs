@@ -4,7 +4,7 @@
  * @param {*[]} originalSet
  * @return {*[][]}
  */
-export default function bwPowerSet(originalSet) {
+function bwPowerSet(originalSet) {
   const subSets = [];
 
   // We will have 2^n possible combinations (where n is a length of original set).
@@ -32,3 +32,4 @@ export default function bwPowerSet(originalSet) {
 
   return subSets;
 }
+module.exports = bwPowerSet;

@@ -1,5 +1,5 @@
-import Stack from '../../../data-structures/stack/Stack';
-import depthFirstSearch from '../depth-first-search/depthFirstSearch';
+const Stack = require('../../../data-structures/stack/Stack');
+const depthFirstSearch = require('../depth-first-search/depthFirstSearch');
 
 /**
  * @param {Graph} graph
@@ -116,7 +116,7 @@ function getSCCSets(graph, verticesByFinishTime) {
  * @param {Graph} graph
  * @return {*[]}
  */
-export default function stronglyConnectedComponents(graph) {
+function stronglyConnectedComponents(graph) {
   // In this algorithm we will need to do TWO DFS PASSES overt the graph.
 
   // Get stack of vertices ordered by DFS finish time.
@@ -131,3 +131,4 @@ export default function stronglyConnectedComponents(graph) {
   // Do DFS once again on reversed graph.
   return getSCCSets(graph, verticesByFinishTime);
 }
+module.exports = stronglyConnectedComponents;

@@ -5,7 +5,7 @@
  * @param {Number[]} inputArray
  * @return {Number[]}
  */
-export default function dpMaximumSubarray(inputArray) {
+function dpMaximumSubarray(inputArray) {
   // We iterate through the inputArray once, using a greedy approach to keep track of the maximum
   // sum we've seen so far and the current sum.
   //
@@ -43,3 +43,4 @@ export default function dpMaximumSubarray(inputArray) {
 
   return inputArray.slice(maxStartIndex, maxEndIndex + 1);
 }
+module.exports = dpMaximumSubarray;

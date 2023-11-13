@@ -6,7 +6,7 @@
  * @param {number} xVal
  * @return {number}
  */
-export default function classicPolynome(coefficients, xVal) {
+function classicPolynome(coefficients, xVal) {
   return coefficients.reverse().reduce(
     (accumulator, currentCoefficient, index) => {
       return accumulator + currentCoefficient * (xVal ** index);
@@ -14,3 +14,4 @@ export default function classicPolynome(coefficients, xVal) {
     0,
   );
 }
+module.exports = classicPolynome;

@@ -2,7 +2,7 @@
  * @param {number} number
  * @return {boolean}
  */
-export default function trialDivision(number) {
+function trialDivision(number) {
   // Check if number is integer.
   if (number % 1 !== 0) {
     return false;
@@ -33,3 +33,4 @@ export default function trialDivision(number) {
 
   return true;
 }
+module.exports = trialDivision;

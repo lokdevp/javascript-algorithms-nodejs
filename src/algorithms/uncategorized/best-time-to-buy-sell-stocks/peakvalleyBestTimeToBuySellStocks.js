@@ -32,4 +32,4 @@ const peakvalleyBestTimeToBuySellStocks = (prices, visit = () => {}) => {
   return profit;
 };
 
-export default peakvalleyBestTimeToBuySellStocks;
+module.exports = peakvalleyBestTimeToBuySellStocks;

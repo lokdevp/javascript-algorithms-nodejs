@@ -6,7 +6,7 @@
  * @param {string} string2
  * @return {number}
  */
-export default function longestCommonSubsequenceRecursive(string1, string2) {
+function longestCommonSubsequenceRecursive(string1, string2) {
   /**
    *
    * @param {string} s1
@@ -34,3 +34,4 @@ export default function longestCommonSubsequenceRecursive(string1, string2) {
 
   return lcs(string1, string2);
 }
+module.exports = longestCommonSubsequenceRecursive;

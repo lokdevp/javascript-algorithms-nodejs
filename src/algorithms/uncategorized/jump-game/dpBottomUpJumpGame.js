@@ -16,7 +16,7 @@
  * @param {number[]} numbers - array of possible jump length.
  * @return {boolean}
  */
-export default function dpBottomUpJumpGame(numbers) {
+function dpBottomUpJumpGame(numbers) {
   // Init cells goodness table.
   const cellsGoodness = Array(numbers.length).fill(undefined);
   // Mark the last cell as "good" one since it is where we ultimately want to get.
@@ -44,3 +44,4 @@ export default function dpBottomUpJumpGame(numbers) {
   // Now, if the zero's cell is good one then we can jump from it to the end of the array.
   return cellsGoodness[0] === true;
 }
+module.exports = dpBottomUpJumpGame;

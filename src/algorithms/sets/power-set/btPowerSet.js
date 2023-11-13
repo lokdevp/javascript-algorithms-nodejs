@@ -36,6 +36,7 @@ function btPowerSetRecursive(originalSet, allSubsets = [[]], currentSubSet = [],
  * @param {*[]} originalSet
  * @return {*[][]}
  */
-export default function btPowerSet(originalSet) {
+function btPowerSet(originalSet) {
   return btPowerSetRecursive(originalSet);
 }
+module.exports = btPowerSet;

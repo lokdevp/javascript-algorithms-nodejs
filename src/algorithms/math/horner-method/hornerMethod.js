@@ -6,7 +6,7 @@
  * @param {number} xVal
  * @return {number}
  */
-export default function hornerMethod(coefficients, xVal) {
+function hornerMethod(coefficients, xVal) {
   return coefficients.reduce(
     (accumulator, currentCoefficient) => {
       return accumulator * xVal + currentCoefficient;
@@ -14,3 +14,4 @@ export default function hornerMethod(coefficients, xVal) {
     0,
   );
 }
+module.exports = hornerMethod;

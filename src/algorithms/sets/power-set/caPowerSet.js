@@ -4,7 +4,7 @@
  * @param {*[]} originalSet
  * @return {*[][]}
  */
-export default function caPowerSet(originalSet) {
+function caPowerSet(originalSet) {
   // Let's start with an empty set.
   const sets = [[]];
 
@@ -35,3 +35,4 @@ export default function caPowerSet(originalSet) {
 
   return sets;
 }
+module.exports = caPowerSet;

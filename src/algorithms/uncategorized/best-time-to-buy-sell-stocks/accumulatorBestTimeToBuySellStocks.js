@@ -17,4 +17,4 @@ const accumulatorBestTimeToBuySellStocks = (prices, visit = () => {}) => {
   return profit;
 };
 
-export default accumulatorBestTimeToBuySellStocks;
+module.exports = accumulatorBestTimeToBuySellStocks;

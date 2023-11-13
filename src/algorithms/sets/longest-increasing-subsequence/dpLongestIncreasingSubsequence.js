@@ -5,7 +5,7 @@
  * @param {number[]} sequence
  * @return {number}
  */
-export default function dpLongestIncreasingSubsequence(sequence) {
+function dpLongestIncreasingSubsequence(sequence) {
   // Create array with longest increasing substrings length and
   // fill it with 1-s that would mean that each element of the sequence
   // is itself a minimum increasing subsequence.
@@ -51,3 +51,4 @@ export default function dpLongestIncreasingSubsequence(sequence) {
 
   return longestIncreasingLength;
 }
+module.exports = dpLongestIncreasingSubsequence;

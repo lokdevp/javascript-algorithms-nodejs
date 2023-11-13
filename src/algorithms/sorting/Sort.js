@@ -1,4 +1,4 @@
-import Comparator from '../../utils/comparator/Comparator';
+const Comparator = require('../../utils/comparator/Comparator');
 
 /**
  * @typedef {Object} SorterCallbacks
@@ -8,7 +8,7 @@ import Comparator from '../../utils/comparator/Comparator';
  *  function is visiting the next element.
  */
 
-export default class Sort {
+class Sort {
   constructor(originalCallbacks) {
     this.callbacks = Sort.initSortingCallbacks(originalCallbacks);
     this.comparator = new Comparator(this.callbacks.compareCallback);
@@ -32,3 +32,4 @@ export default class Sort {
     throw new Error('sort method must be implemented');
   }
 }
+module.exports = Sort;

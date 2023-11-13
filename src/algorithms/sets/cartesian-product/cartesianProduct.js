@@ -4,7 +4,7 @@
  * @param {*[]} setB
  * @return {*[]}
  */
-export default function cartesianProduct(setA, setB) {
+function cartesianProduct(setA, setB) {
   // Check if input sets are not empty.
   // Otherwise return null since we can't generate Cartesian Product out of them.
   if (!setA || !setB || !setA.length || !setB.length) {
@@ -25,3 +25,4 @@ export default function cartesianProduct(setA, setB) {
   // Return cartesian product set.
   return product;
 }
+module.exports = cartesianProduct;

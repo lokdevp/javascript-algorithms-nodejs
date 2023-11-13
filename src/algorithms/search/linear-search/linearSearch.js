@@ -1,4 +1,4 @@
-import Comparator from '../../../utils/comparator/Comparator';
+const Comparator = require('../../../utils/comparator/Comparator');
 
 /**
  * Linear search implementation.
@@ -8,7 +8,7 @@ import Comparator from '../../../utils/comparator/Comparator';
  * @param {function(a, b)} [comparatorCallback]
  * @return {number[]}
  */
-export default function linearSearch(array, seekElement, comparatorCallback) {
+function linearSearch(array, seekElement, comparatorCallback) {
   const comparator = new Comparator(comparatorCallback);
   const foundIndices = [];
 
@@ -20,3 +20,4 @@ export default function linearSearch(array, seekElement, comparatorCallback) {
 
   return foundIndices;
 }
+module.exports = linearSearch;

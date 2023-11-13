@@ -1,4 +1,4 @@
-export default class DisjointSetItem {
+class DisjointSetItem {
   /**
    * @param {*} value
    * @param {function(value: *)} [keyCallback]
@@ -94,3 +94,4 @@ export default class DisjointSetItem {
     return this;
   }
 }
+module.exports = DisjointSetItem;

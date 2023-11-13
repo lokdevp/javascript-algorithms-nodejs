@@ -1,4 +1,4 @@
-import Queue from '../../../data-structures/queue/Queue';
+const Queue = require('../../../data-structures/queue/Queue');
 
 /**
  * @typedef {Object} Callbacks
@@ -29,7 +29,7 @@ function initCallbacks(callbacks = {}) {
  * @param {BinaryTreeNode} rootNode
  * @param {Callbacks} [originalCallbacks]
  */
-export default function breadthFirstSearch(rootNode, originalCallbacks) {
+function breadthFirstSearch(rootNode, originalCallbacks) {
   const callbacks = initCallbacks(originalCallbacks);
   const nodeQueue = new Queue();
 
@@ -56,3 +56,4 @@ export default function breadthFirstSearch(rootNode, originalCallbacks) {
     callbacks.leaveNode(currentNode);
   }
 }
+module.exports = breadthFirstSearch;

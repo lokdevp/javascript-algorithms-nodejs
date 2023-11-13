@@ -19,6 +19,7 @@ function reverseTraversalRecursive(node, callback) {
  * @param {LinkedList} linkedList
  * @param {traversalCallback} callback
  */
-export default function reverseTraversal(linkedList, callback) {
+function reverseTraversal(linkedList, callback) {
   reverseTraversalRecursive(linkedList.head, callback);
 }
+module.exports = reverseTraversal;

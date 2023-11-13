@@ -4,7 +4,7 @@
  * @param n
  * @return {number[]}
  */
-export default function fibonacci(n) {
+function fibonacci(n) {
   const fibSequence = [1];
 
   let currentValue = 1;
@@ -27,3 +27,4 @@ export default function fibonacci(n) {
 
   return fibSequence;
 }
+module.exports = fibonacci;

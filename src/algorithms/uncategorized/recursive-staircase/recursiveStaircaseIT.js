@@ -4,7 +4,7 @@
  * @param {number} stairsNum - Number of stairs to climb on.
  * @return {number} - Number of ways to climb a staircase.
  */
-export default function recursiveStaircaseIT(stairsNum) {
+function recursiveStaircaseIT(stairsNum) {
   if (stairsNum <= 0) {
     // There is no way to go down - you climb the stairs only upwards.
     // Also you don't need to do anything to stay on the 0th step.
@@ -29,3 +29,4 @@ export default function recursiveStaircaseIT(stairsNum) {
   // Return possible ways to get to the requested step.
   return steps[1];
 }
+module.exports = recursiveStaircaseIT;

@@ -5,7 +5,7 @@
  * @param {Number[]} inputArray
  * @return {Number[]}
  */
-export default function dcMaximumSubarraySum(inputArray) {
+function dcMaximumSubarraySum(inputArray) {
   /**
    * We are going through the inputArray array and for each element we have two options:
    * - to pick
@@ -31,3 +31,4 @@ export default function dcMaximumSubarraySum(inputArray) {
   }
   return solveRecursively(0, false);
 }
+module.exports = dcMaximumSubarraySum;

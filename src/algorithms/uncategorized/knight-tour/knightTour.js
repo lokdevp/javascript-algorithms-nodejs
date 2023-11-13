@@ -93,7 +93,7 @@ function knightTourRecursive(chessboard, moves) {
  * @param {number} chessboardSize
  * @return {number[][]}
  */
-export default function knightTour(chessboardSize) {
+function knightTour(chessboardSize) {
   // Init chessboard.
   const chessboard = Array(chessboardSize).fill(null).map(() => Array(chessboardSize).fill(0));
 
@@ -110,3 +110,4 @@ export default function knightTour(chessboardSize) {
 
   return solutionWasFound ? moves : [];
 }
+module.exports = knightTour;

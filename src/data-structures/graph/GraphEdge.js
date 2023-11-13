@@ -1,4 +1,4 @@
-export default class GraphEdge {
+class GraphEdge {
   /**
    * @param {GraphVertex} startVertex
    * @param {GraphVertex} endVertex
@@ -38,3 +38,4 @@ export default class GraphEdge {
     return this.getKey();
   }
 }
+module.exports = GraphEdge;

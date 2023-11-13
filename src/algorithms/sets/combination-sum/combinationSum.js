@@ -60,6 +60,7 @@ function combinationSumRecursive(
  * @param {number} target
  * @return {number[][]}
  */
-export default function combinationSum(candidates, target) {
+function combinationSum(candidates, target) {
   return combinationSumRecursive(candidates, target);
 }
+module.exports = combinationSum;

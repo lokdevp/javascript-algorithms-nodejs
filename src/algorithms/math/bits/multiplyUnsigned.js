@@ -16,7 +16,7 @@
  * @param {number} number2
  * @return {number}
  */
-export default function multiplyUnsigned(number1, number2) {
+function multiplyUnsigned(number1, number2) {
   let result = 0;
 
   // Let's treat number2 as a multiplier for the number1.
@@ -41,3 +41,4 @@ export default function multiplyUnsigned(number1, number2) {
 
   return result;
 }
+module.exports = multiplyUnsigned;

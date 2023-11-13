@@ -8,7 +8,7 @@
  * @param {number} power - The power that number will be raised to.
  * @return {number}
  */
-export default function fastPowering(base, power) {
+function fastPowering(base, power) {
   if (power === 0) {
     // Anything that is raised to the power of zero is 1.
     return 1;
@@ -28,3 +28,4 @@ export default function fastPowering(base, power) {
   const multiplier = fastPowering(base, Math.floor(power / 2));
   return multiplier * multiplier * base;
 }
+module.exports = fastPowering;

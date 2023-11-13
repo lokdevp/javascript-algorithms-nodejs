@@ -1,6 +1,6 @@
-import MergeSort from '../../sorting/merge-sort/MergeSort';
+const MergeSort = require('../../sorting/merge-sort/MergeSort');
 
-export default class Knapsack {
+class Knapsack {
   /**
    * @param {KnapsackItem[]} possibleItems
    * @param {number} weightLimit
@@ -193,3 +193,4 @@ export default class Knapsack {
     }, 0);
   }
 }
+module.exports = Knapsack;

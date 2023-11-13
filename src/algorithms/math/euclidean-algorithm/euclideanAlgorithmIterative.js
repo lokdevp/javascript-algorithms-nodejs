@@ -4,7 +4,7 @@
  * @param {number} originalB
  * @return {number}
  */
-export default function euclideanAlgorithmIterative(originalA, originalB) {
+function euclideanAlgorithmIterative(originalA, originalB) {
   // Make input numbers positive.
   let a = Math.abs(originalA);
   let b = Math.abs(originalB);
@@ -18,3 +18,4 @@ export default function euclideanAlgorithmIterative(originalA, originalB) {
   // Return the number that is not equal to zero since the last subtraction (it will be a GCD).
   return a || b;
 }
+module.exports = euclideanAlgorithmIterative;

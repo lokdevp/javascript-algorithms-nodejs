@@ -1,6 +1,6 @@
-import Sort from '../Sort';
+const Sort = require('../Sort');
 
-export default class QuickSortInPlace extends Sort {
+class QuickSortInPlace extends Sort {
   /** Sorting in place avoids unnecessary use of additional memory, but modifies input array.
    *
    * This process is difficult to describe, but much clearer with a visualization:
@@ -76,3 +76,4 @@ export default class QuickSortInPlace extends Sort {
     return array;
   }
 }
+module.exports = QuickSortInPlace;

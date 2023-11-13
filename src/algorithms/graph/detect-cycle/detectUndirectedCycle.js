@@ -1,11 +1,11 @@
-import depthFirstSearch from '../depth-first-search/depthFirstSearch';
+const depthFirstSearch = require('../depth-first-search/depthFirstSearch');
 
 /**
  * Detect cycle in undirected graph using Depth First Search.
  *
  * @param {Graph} graph
  */
-export default function detectUndirectedCycle(graph) {
+function detectUndirectedCycle(graph) {
   let cycle = null;
 
   // List of vertices that we have visited.
@@ -57,3 +57,4 @@ export default function detectUndirectedCycle(graph) {
 
   return cycle;
 }
+module.exports = detectUndirectedCycle;

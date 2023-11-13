@@ -50,4 +50,4 @@ class LRUCacheOnMap {
   }
 }
 
-export default LRUCacheOnMap;
+module.exports = LRUCacheOnMap;

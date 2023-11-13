@@ -1,6 +1,6 @@
-import Heap from './Heap';
+const Heap = require('./Heap');
 
-export default class MinHeap extends Heap {
+class MinHeap extends Heap {
   /**
    * Checks if pair of heap elements is in correct order.
    * For MinHeap the first element must be always smaller or equal.
@@ -14,3 +14,4 @@ export default class MinHeap extends Heap {
     return this.compare.lessThanOrEqual(firstElement, secondElement);
   }
 }
+module.exports = MinHeap;

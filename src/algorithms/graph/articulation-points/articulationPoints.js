@@ -1,4 +1,4 @@
-import depthFirstSearch from '../depth-first-search/depthFirstSearch';
+const depthFirstSearch = require('../depth-first-search/depthFirstSearch');
 
 /**
  * Helper class for visited vertex metadata.
@@ -19,7 +19,7 @@ class VisitMetadata {
  * @param {Graph} graph
  * @return {Object}
  */
-export default function articulationPoints(graph) {
+function articulationPoints(graph) {
   // Set of vertices we've already visited during DFS.
   const visitedSet = {};
 
@@ -111,3 +111,4 @@ export default function articulationPoints(graph) {
 
   return articulationPointsSet;
 }
+module.exports = articulationPoints;

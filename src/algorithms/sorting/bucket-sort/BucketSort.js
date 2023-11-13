@@ -1,4 +1,4 @@
-import RadixSort from '../radix-sort/RadixSort';
+const RadixSort = require('../radix-sort/RadixSort');
 
 /**
  * Bucket Sort
@@ -7,7 +7,7 @@ import RadixSort from '../radix-sort/RadixSort';
  * @param {number} bucketsNum
  * @return {number[]}
  */
-export default function BucketSort(arr, bucketsNum = 1) {
+function BucketSort(arr, bucketsNum = 1) {
   const buckets = new Array(bucketsNum).fill(null).map(() => []);
 
   const minValue = Math.min(...arr);
@@ -44,3 +44,4 @@ export default function BucketSort(arr, bucketsNum = 1) {
 
   return sortedArr;
 }
+module.exports = BucketSort;

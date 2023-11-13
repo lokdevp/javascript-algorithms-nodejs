@@ -1,9 +1,9 @@
-import MinHeap from '../heap/MinHeap';
-import Comparator from '../../utils/comparator/Comparator';
+const MinHeap = require('../heap/MinHeap');
+const Comparator = require('../../utils/comparator/Comparator');
 
 // It is the same as min heap except that when comparing two elements
 // we take into account its priority instead of the element's value.
-export default class PriorityQueue extends MinHeap {
+class PriorityQueue extends MinHeap {
   constructor() {
     // Call MinHip constructor first.
     super();
@@ -96,3 +96,4 @@ export default class PriorityQueue extends MinHeap {
     return a < b ? -1 : 1;
   }
 }
+module.exports = PriorityQueue;

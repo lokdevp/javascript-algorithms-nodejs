@@ -96,6 +96,7 @@ function nQueensBitwiseRecursive(
  * @return {number} - Number of possible solutions.
  * @see http://gregtrowbridge.com/a-bitwise-solution-to-the-n-queens-problem-in-javascript/
  */
-export default function nQueensBitwise(boardSize) {
+function nQueensBitwise(boardSize) {
   return nQueensBitwiseRecursive(boardSize);
 }
+module.exports = nQueensBitwise;

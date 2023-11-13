@@ -3,7 +3,7 @@
  * @param {string[]} set2
  * @return {string[]}
  */
-export default function longestCommonSubsequence(set1, set2) {
+function longestCommonSubsequence(set1, set2) {
   // Init LCS matrix.
   const lcsMatrix = Array(set2.length + 1).fill(null).map(() => Array(set1.length + 1).fill(null));
 
@@ -58,3 +58,4 @@ export default function longestCommonSubsequence(set1, set2) {
 
   return longestSequence;
 }
+module.exports = longestCommonSubsequence;

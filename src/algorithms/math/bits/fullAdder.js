@@ -1,4 +1,4 @@
-import getBit from './getBit';
+const getBit = require('./getBit');
 
 /**
  * Add two numbers using only binary operators.
@@ -34,7 +34,7 @@ import getBit from './getBit';
  * @param {number} b
  * @return {number}
  */
-export default function fullAdder(a, b) {
+function fullAdder(a, b) {
   let result = 0;
   let carry = 0;
 
@@ -68,3 +68,4 @@ export default function fullAdder(a, b) {
 
   return result;
 }
+module.exports = fullAdder;

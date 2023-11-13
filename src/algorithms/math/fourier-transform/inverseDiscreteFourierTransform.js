@@ -1,4 +1,4 @@
-import ComplexNumber from '../complex-number/ComplexNumber';
+const ComplexNumber = require('../complex-number/ComplexNumber');
 
 const CLOSE_TO_ZERO_THRESHOLD = 1e-10;
 
@@ -13,7 +13,7 @@ const CLOSE_TO_ZERO_THRESHOLD = 1e-10;
  *
  * @return {number[]} - Discrete amplitudes distributed in time.
  */
-export default function inverseDiscreteFourierTransform(
+function inverseDiscreteFourierTransform(
   frequencies,
   zeroThreshold = CLOSE_TO_ZERO_THRESHOLD,
 ) {
@@ -56,3 +56,4 @@ export default function inverseDiscreteFourierTransform(
 
   return amplitudes;
 }
+module.exports = inverseDiscreteFourierTransform;

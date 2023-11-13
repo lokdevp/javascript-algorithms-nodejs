@@ -3,7 +3,7 @@
  * @param {number} permutationLength
  * @return {*[]}
  */
-export default function permutateWithRepetitions(
+function permutateWithRepetitions(
   permutationOptions,
   permutationLength = permutationOptions.length,
 ) {
@@ -29,3 +29,4 @@ export default function permutateWithRepetitions(
 
   return permutations;
 }
+module.exports = permutateWithRepetitions;

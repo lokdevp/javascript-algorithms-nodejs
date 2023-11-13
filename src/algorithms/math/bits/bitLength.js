@@ -4,7 +4,7 @@
  * @param {number} number
  * @return {number}
  */
-export default function bitLength(number) {
+function bitLength(number) {
   let bitsCounter = 0;
 
   while ((1 << bitsCounter) <= number) {
@@ -13,3 +13,4 @@ export default function bitLength(number) {
 
   return bitsCounter;
 }
+module.exports = bitLength;

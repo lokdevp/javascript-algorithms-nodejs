@@ -4,7 +4,7 @@
  * @param {number} totalStairs - Number of stairs to climb on.
  * @return {number} - Number of ways to climb a staircase.
  */
-export default function recursiveStaircaseMEM(totalStairs) {
+function recursiveStaircaseMEM(totalStairs) {
   // Memo table that will hold all recursively calculated results to avoid calculating them
   // over and over again.
   const memo = [];
@@ -42,3 +42,4 @@ export default function recursiveStaircaseMEM(totalStairs) {
   // Return possible ways to get to the requested step.
   return getSteps(totalStairs);
 }
+module.exports = recursiveStaircaseMEM;

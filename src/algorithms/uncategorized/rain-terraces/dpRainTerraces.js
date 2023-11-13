@@ -4,7 +4,7 @@
  * @param {number[]} terraces
  * @return {number}
  */
-export default function dpRainTerraces(terraces) {
+function dpRainTerraces(terraces) {
   let waterAmount = 0;
 
   // Init arrays that will keep the list of left and right maximum levels for specific positions.
@@ -45,3 +45,4 @@ export default function dpRainTerraces(terraces) {
 
   return waterAmount;
 }
+module.exports = dpRainTerraces;

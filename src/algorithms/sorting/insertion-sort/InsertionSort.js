@@ -1,6 +1,6 @@
-import Sort from '../Sort';
+const Sort = require('../Sort');
 
-export default class InsertionSort extends Sort {
+class InsertionSort extends Sort {
   sort(originalArray) {
     const array = [...originalArray];
 
@@ -37,3 +37,4 @@ export default class InsertionSort extends Sort {
     return array;
   }
 }
+module.exports = InsertionSort;

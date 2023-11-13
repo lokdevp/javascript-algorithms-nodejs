@@ -2,7 +2,7 @@
  * @param {number} number
  * @return {boolean}
  */
-export default function isPowerOfTwo(number) {
+function isPowerOfTwo(number) {
   // 1 (2^0) is the smallest power of two.
   if (number < 1) {
     return false;
@@ -23,3 +23,4 @@ export default function isPowerOfTwo(number) {
 
   return true;
 }
+module.exports = isPowerOfTwo;

@@ -1,4 +1,4 @@
-export default class FenwickTree {
+class FenwickTree {
   /**
    * Constructor creates empty fenwick tree of size 'arraySize',
    * however, array size is size+1, because index is 1-based.
@@ -70,3 +70,4 @@ export default class FenwickTree {
     return this.query(rightIndex) - this.query(leftIndex - 1);
   }
 }
+module.exports = FenwickTree;

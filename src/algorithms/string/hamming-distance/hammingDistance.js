@@ -3,7 +3,7 @@
  * @param {string} b
  * @return {number}
  */
-export default function hammingDistance(a, b) {
+function hammingDistance(a, b) {
   if (a.length !== b.length) {
     throw new Error('Strings must be of the same length');
   }
@@ -18,3 +18,4 @@ export default function hammingDistance(a, b) {
 
   return distance;
 }
+module.exports = hammingDistance;

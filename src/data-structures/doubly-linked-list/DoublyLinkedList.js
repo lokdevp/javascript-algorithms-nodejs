@@ -1,7 +1,7 @@
-import DoublyLinkedListNode from './DoublyLinkedListNode';
-import Comparator from '../../utils/comparator/Comparator';
+const DoublyLinkedListNode = require('./DoublyLinkedListNode');
+const Comparator = require('../../utils/comparator/Comparator');
 
-export default class DoublyLinkedList {
+class DoublyLinkedList {
   /**
    * @param {Function} [comparatorFunction]
    */
@@ -261,3 +261,4 @@ export default class DoublyLinkedList {
     return this;
   }
 }
+module.exports = DoublyLinkedList;

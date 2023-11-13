@@ -5,7 +5,7 @@
  * @param {Number[]} inputArray
  * @return {Number[]}
  */
-export default function bfMaximumSubarray(inputArray) {
+function bfMaximumSubarray(inputArray) {
   let maxSubarrayStartIndex = 0;
   let maxSubarrayLength = 0;
   let maxSubarraySum = null;
@@ -24,3 +24,4 @@ export default function bfMaximumSubarray(inputArray) {
 
   return inputArray.slice(maxSubarrayStartIndex, maxSubarrayStartIndex + maxSubarrayLength);
 }
+module.exports = bfMaximumSubarray;

@@ -5,7 +5,7 @@
  * @param {*} seekElement
  * @return {number}
  */
-export default function interpolationSearch(sortedArray, seekElement) {
+function interpolationSearch(sortedArray, seekElement) {
   let leftIndex = 0;
   let rightIndex = sortedArray.length - 1;
 
@@ -50,3 +50,4 @@ export default function interpolationSearch(sortedArray, seekElement) {
 
   return -1;
 }
+module.exports = interpolationSearch;

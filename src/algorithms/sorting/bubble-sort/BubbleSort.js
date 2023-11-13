@@ -1,6 +1,6 @@
-import Sort from '../Sort';
+const Sort = require('../Sort');
 
-export default class BubbleSort extends Sort {
+class BubbleSort extends Sort {
   sort(originalArray) {
     // Flag that holds info about whether the swap has occur or not.
     let swapped = false;
@@ -36,3 +36,4 @@ export default class BubbleSort extends Sort {
     return array;
   }
 }
+module.exports = BubbleSort;

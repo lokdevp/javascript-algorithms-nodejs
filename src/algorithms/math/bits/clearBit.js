@@ -3,8 +3,9 @@
  * @param {number} bitPosition - zero based.
  * @return {number}
  */
-export default function clearBit(number, bitPosition) {
+function clearBit(number, bitPosition) {
   const mask = ~(1 << bitPosition);
 
   return number & mask;
 }
+module.exports = clearBit;

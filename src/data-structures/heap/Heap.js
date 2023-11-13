@@ -1,9 +1,9 @@
-import Comparator from '../../utils/comparator/Comparator';
+const Comparator = require('../../utils/comparator/Comparator');
 
 /**
  * Parent class for Min and Max Heaps.
  */
-export default class Heap {
+class Heap {
   /**
    * @constructs Heap
    * @param {Function} [comparatorFunction]
@@ -284,3 +284,4 @@ export default class Heap {
     `);
   }
 }
+module.exports = Heap;

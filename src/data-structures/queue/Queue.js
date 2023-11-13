@@ -1,6 +1,6 @@
-import LinkedList from '../linked-list/LinkedList';
+const LinkedList = require('../linked-list/LinkedList');
 
-export default class Queue {
+class Queue {
   constructor() {
     // We're going to implement Queue based on LinkedList since the two
     // structures are quite similar. Namely, they both operate mostly on
@@ -56,3 +56,4 @@ export default class Queue {
     return this.linkedList.toString(callback);
   }
 }
+module.exports = Queue;

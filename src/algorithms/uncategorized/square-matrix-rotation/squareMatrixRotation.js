@@ -2,7 +2,7 @@
  * @param {*[][]} originalMatrix
  * @return {*[][]}
  */
-export default function squareMatrixRotation(originalMatrix) {
+function squareMatrixRotation(originalMatrix) {
   const matrix = originalMatrix.slice();
 
   // Do top-right/bottom-left diagonal reflection of the matrix.
@@ -35,3 +35,4 @@ export default function squareMatrixRotation(originalMatrix) {
 
   return matrix;
 }
+module.exports = squareMatrixRotation;

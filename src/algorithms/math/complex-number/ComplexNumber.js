@@ -1,6 +1,6 @@
-import radianToDegree from '../radian/radianToDegree';
+const radianToDegree = require('../radian/radianToDegree');
 
-export default class ComplexNumber {
+class ComplexNumber {
   /**
    * z = re + im * i
    * z = radius * e^(i * phase)
@@ -158,3 +158,4 @@ export default class ComplexNumber {
     return new ComplexNumber({ re: number });
   }
 }
+module.exports = ComplexNumber;

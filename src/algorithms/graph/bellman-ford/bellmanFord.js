@@ -3,7 +3,7 @@
  * @param {GraphVertex} startVertex
  * @return {{distances, previousVertices}}
  */
-export default function bellmanFord(graph, startVertex) {
+function bellmanFord(graph, startVertex) {
   const distances = {};
   const previousVertices = {};
 
@@ -43,3 +43,4 @@ export default function bellmanFord(graph, startVertex) {
     previousVertices,
   };
 }
+module.exports = bellmanFord;

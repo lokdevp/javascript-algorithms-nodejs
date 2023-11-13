@@ -4,7 +4,7 @@
  * @param {number} originalB
  * @return {number}
  */
-export default function euclideanAlgorithm(originalA, originalB) {
+function euclideanAlgorithm(originalA, originalB) {
   // Make input numbers positive.
   const a = Math.abs(originalA);
   const b = Math.abs(originalB);
@@ -13,3 +13,4 @@ export default function euclideanAlgorithm(originalA, originalB) {
   // we may use modulo operation.
   return (b === 0) ? a : euclideanAlgorithm(b, a % b);
 }
+module.exports = euclideanAlgorithm;

@@ -1,4 +1,4 @@
-import graphBridges from '../bridges/graphBridges';
+const graphBridges = require('../bridges/graphBridges');
 
 /**
  * Fleury's algorithm of finding Eulerian Path (visit all graph edges exactly once).
@@ -6,7 +6,7 @@ import graphBridges from '../bridges/graphBridges';
  * @param {Graph} graph
  * @return {GraphVertex[]}
  */
-export default function eulerianPath(graph) {
+function eulerianPath(graph) {
   const eulerianPathVertices = [];
 
   // Set that contains all vertices with even rank (number of neighbors).
@@ -99,3 +99,4 @@ export default function eulerianPath(graph) {
 
   return eulerianPathVertices;
 }
+module.exports = eulerianPath;

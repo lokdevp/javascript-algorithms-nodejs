@@ -1,4 +1,4 @@
-import Queue from '../../../data-structures/queue/Queue';
+const Queue = require('../../../data-structures/queue/Queue');
 
 /**
  * @typedef {Object} Callbacks
@@ -46,7 +46,7 @@ function initCallbacks(callbacks = {}) {
  * @param {GraphVertex} startVertex
  * @param {Callbacks} [originalCallbacks]
  */
-export default function breadthFirstSearch(graph, startVertex, originalCallbacks) {
+function breadthFirstSearch(graph, startVertex, originalCallbacks) {
   const callbacks = initCallbacks(originalCallbacks);
   const vertexQueue = new Queue();
 
@@ -73,3 +73,4 @@ export default function breadthFirstSearch(graph, startVertex, originalCallbacks
     previousVertex = currentVertex;
   }
 }
+module.exports = breadthFirstSearch;

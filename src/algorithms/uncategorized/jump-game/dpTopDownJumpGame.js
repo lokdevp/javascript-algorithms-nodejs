@@ -17,7 +17,7 @@
  * @param {boolean[]} cellsGoodness - holds information about whether cell is "good" or "bad"
  * @return {boolean}
  */
-export default function dpTopDownJumpGame(
+function dpTopDownJumpGame(
   numbers,
   startIndex = 0,
   currentJumps = [],
@@ -78,3 +78,4 @@ export default function dpTopDownJumpGame(
 
   return false;
 }
+module.exports = dpTopDownJumpGame;

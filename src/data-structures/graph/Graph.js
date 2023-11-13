@@ -1,4 +1,4 @@
-export default class Graph {
+class Graph {
   /**
    * @param {boolean} isDirected
    */
@@ -195,3 +195,4 @@ export default class Graph {
     return Object.keys(this.vertices).toString();
   }
 }
+module.exports = Graph;

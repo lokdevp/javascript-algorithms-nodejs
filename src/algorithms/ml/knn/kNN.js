@@ -8,9 +8,9 @@
  * @return {number} - the class of the point
  */
 
-import euclideanDistance from '../../math/euclidean-distance/euclideanDistance';
+const euclideanDistance = require('../../math/euclidean-distance/euclideanDistance');
 
-export default function kNN(
+function kNN(
   dataSet,
   labels,
   toClassify,
@@ -58,3 +58,4 @@ export default function kNN(
   // Return the class with highest count.
   return topClass;
 }
+module.exports = kNN;

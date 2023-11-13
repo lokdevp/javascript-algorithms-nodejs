@@ -1,11 +1,11 @@
-import depthFirstSearch from '../depth-first-search/depthFirstSearch';
+const depthFirstSearch = require('../depth-first-search/depthFirstSearch');
 
 /**
  * Detect cycle in directed graph using Depth First Search.
  *
  * @param {Graph} graph
  */
-export default function detectDirectedCycle(graph) {
+function detectDirectedCycle(graph) {
   let cycle = null;
 
   // Will store parents (previous vertices) for all visited nodes.
@@ -91,3 +91,4 @@ export default function detectDirectedCycle(graph) {
 
   return cycle;
 }
+module.exports = detectDirectedCycle;

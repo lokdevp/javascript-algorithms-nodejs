@@ -1,6 +1,6 @@
-import DisjointSetItem from './DisjointSetItem';
+const DisjointSetItem = require('./DisjointSetItem');
 
-export default class DisjointSet {
+class DisjointSet {
   /**
    * @param {function(value: *)} [keyCallback]
    */
@@ -95,3 +95,4 @@ export default class DisjointSet {
     return rootKeyA === rootKeyB;
   }
 }
+module.exports = DisjointSet;

@@ -3,6 +3,7 @@
  * @param {number} bitPosition - zero based.
  * @return {number}
  */
-export default function getBit(number, bitPosition) {
+function getBit(number, bitPosition) {
   return (number >> bitPosition) & 1;
 }
+module.exports = getBit;

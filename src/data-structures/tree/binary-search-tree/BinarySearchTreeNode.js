@@ -1,7 +1,7 @@
-import BinaryTreeNode from '../BinaryTreeNode';
-import Comparator from '../../../utils/comparator/Comparator';
+const BinaryTreeNode = require('../BinaryTreeNode');
+const Comparator = require('../../../utils/comparator/Comparator');
 
-export default class BinarySearchTreeNode extends BinaryTreeNode {
+class BinarySearchTreeNode extends BinaryTreeNode {
   /**
    * @param {*} [value] - node value.
    * @param {function} [compareFunction] - comparator function for node values.
@@ -149,3 +149,4 @@ export default class BinarySearchTreeNode extends BinaryTreeNode {
     return this.left.findMin();
   }
 }
+module.exports = BinarySearchTreeNode;

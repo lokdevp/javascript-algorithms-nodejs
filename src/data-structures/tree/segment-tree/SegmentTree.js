@@ -1,6 +1,6 @@
-import isPowerOfTwo from '../../../algorithms/math/is-power-of-two/isPowerOfTwo';
+const isPowerOfTwo = require('../../../algorithms/math/is-power-of-two/isPowerOfTwo');
 
-export default class SegmentTree {
+class SegmentTree {
   /**
    * @param {number[]} inputArray
    * @param {function} operation - binary function (i.e. sum, min)
@@ -166,3 +166,4 @@ export default class SegmentTree {
     return (2 * parentIndex) + 2;
   }
 }
+module.exports = SegmentTree;

@@ -43,7 +43,7 @@ function getNGonSideCount(splitCount) {
  *  On each split we will receive 12-gon, 24-gon and so on.
  * @return {number}
  */
-export default function liuHui(splitCount = 1) {
+function liuHui(splitCount = 1) {
   const nGonSideLength = getNGonSideLength(circleRadius, splitCount - 1);
   const nGonSideCount = getNGonSideCount(splitCount - 1);
   const nGonPerimeter = nGonSideLength * nGonSideCount;
@@ -52,3 +52,4 @@ export default function liuHui(splitCount = 1) {
   // Return approximate value of pi.
   return approximateCircleArea / (circleRadius ** 2);
 }
+module.exports = liuHui;

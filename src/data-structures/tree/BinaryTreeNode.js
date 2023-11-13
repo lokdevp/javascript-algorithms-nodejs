@@ -1,7 +1,7 @@
-import Comparator from '../../utils/comparator/Comparator';
-import HashTable from '../hash-table/HashTable';
+const Comparator = require('../../utils/comparator/Comparator');
+const HashTable = require('../hash-table/HashTable');
 
-export default class BinaryTreeNode {
+class BinaryTreeNode {
   /**
    * @param {*} [value] - node value.
    */
@@ -217,3 +217,4 @@ export default class BinaryTreeNode {
     return this.traverseInOrder().toString();
   }
 }
+module.exports = BinaryTreeNode;

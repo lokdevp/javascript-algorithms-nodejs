@@ -12,7 +12,7 @@
  * @param {number[]} currentJumps - current jumps path.
  * @return {boolean}
  */
-export default function backtrackingJumpGame(numbers, startIndex = 0, currentJumps = []) {
+function backtrackingJumpGame(numbers, startIndex = 0, currentJumps = []) {
   if (startIndex === numbers.length - 1) {
     // We've jumped directly to last cell. This situation is a solution.
     return true;
@@ -46,3 +46,4 @@ export default function backtrackingJumpGame(numbers, startIndex = 0, currentJum
 
   return false;
 }
+module.exports = backtrackingJumpGame;

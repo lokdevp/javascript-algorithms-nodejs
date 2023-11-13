@@ -1,6 +1,6 @@
 const DEFAULT_BASE = 17;
 
-export default class SimplePolynomialHash {
+class SimplePolynomialHash {
   /**
    * @param {number} [base] - Base number that is used to create the polynomial.
    */
@@ -61,3 +61,4 @@ export default class SimplePolynomialHash {
     return hash;
   }
 }
+module.exports = SimplePolynomialHash;

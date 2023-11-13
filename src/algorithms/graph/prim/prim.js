@@ -1,11 +1,11 @@
-import Graph from '../../../data-structures/graph/Graph';
-import PriorityQueue from '../../../data-structures/priority-queue/PriorityQueue';
+const Graph = require('../../../data-structures/graph/Graph');
+const PriorityQueue = require('../../../data-structures/priority-queue/PriorityQueue');
 
 /**
  * @param {Graph} graph
  * @return {Graph}
  */
-export default function prim(graph) {
+function prim(graph) {
   // It should fire error if graph is directed since the algorithm works only
   // for undirected graphs.
   if (graph.isDirected) {
@@ -71,3 +71,4 @@ export default function prim(graph) {
 
   return minimumSpanningTree;
 }
+module.exports = prim;

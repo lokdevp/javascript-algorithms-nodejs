@@ -7,7 +7,7 @@
  * @param {number} uniqueSteps - Total number of unique steps.
  * @return {number} - Number of unique paths.
  */
-export default function btUniquePaths(width, height, steps = [[0, 0]], uniqueSteps = 0) {
+function btUniquePaths(width, height, steps = [[0, 0]], uniqueSteps = 0) {
   // Fetch current position on board.
   const currentPos = steps[steps.length - 1];
 
@@ -56,3 +56,4 @@ export default function btUniquePaths(width, height, steps = [[0, 0]], uniqueSte
   // by going down.
   return rightUniqueSteps + downUniqueSteps;
 }
+module.exports = btUniquePaths;

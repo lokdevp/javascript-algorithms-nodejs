@@ -2,7 +2,7 @@
  * @param {*[]} originalArray
  * @return {*[]}
  */
-export default function fisherYates(originalArray) {
+function fisherYates(originalArray) {
   // Clone array from preventing original array from modification (for testing purpose).
   const array = originalArray.slice(0);
 
@@ -13,3 +13,4 @@ export default function fisherYates(originalArray) {
 
   return array;
 }
+module.exports = fisherYates;

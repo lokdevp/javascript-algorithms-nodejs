@@ -1,7 +1,7 @@
-import Sort from '../Sort';
-import MinHeap from '../../../data-structures/heap/MinHeap';
+const Sort = require('../Sort');
+const MinHeap = require('../../../data-structures/heap/MinHeap');
 
-export default class HeapSort extends Sort {
+class HeapSort extends Sort {
   sort(originalArray) {
     const sortedArray = [];
     const minHeap = new MinHeap(this.callbacks.compareCallback);
@@ -28,3 +28,4 @@ export default class HeapSort extends Sort {
     return sortedArray;
   }
 }
+module.exports = HeapSort;

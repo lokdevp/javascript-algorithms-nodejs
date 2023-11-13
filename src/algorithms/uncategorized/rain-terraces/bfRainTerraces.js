@@ -4,7 +4,7 @@
  * @param {number[]} terraces
  * @return {number}
  */
-export default function bfRainTerraces(terraces) {
+function bfRainTerraces(terraces) {
   let waterAmount = 0;
 
   for (let terraceIndex = 0; terraceIndex < terraces.length; terraceIndex += 1) {
@@ -31,3 +31,4 @@ export default function bfRainTerraces(terraces) {
 
   return waterAmount;
 }
+module.exports = bfRainTerraces;

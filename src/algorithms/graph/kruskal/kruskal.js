@@ -1,12 +1,12 @@
-import Graph from '../../../data-structures/graph/Graph';
-import QuickSort from '../../sorting/quick-sort/QuickSort';
-import DisjointSet from '../../../data-structures/disjoint-set/DisjointSet';
+const Graph = require('../../../data-structures/graph/Graph');
+const QuickSort = require('../../sorting/quick-sort/QuickSort');
+const DisjointSet = require('../../../data-structures/disjoint-set/DisjointSet');
 
 /**
  * @param {Graph} graph
  * @return {Graph}
  */
-export default function kruskal(graph) {
+function kruskal(graph) {
   // It should fire error if graph is directed since the algorithm works only
   // for undirected graphs.
   if (graph.isDirected) {
@@ -60,3 +60,4 @@ export default function kruskal(graph) {
 
   return minimumSpanningTree;
 }
+module.exports = kruskal;

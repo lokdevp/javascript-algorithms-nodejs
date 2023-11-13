@@ -8,7 +8,7 @@ const ANY_CHAR = '.';
  * @param {string} pattern
  * @return {boolean}
  */
-export default function regularExpressionMatching(string, pattern) {
+function regularExpressionMatching(string, pattern) {
   /*
     * Let's initiate dynamic programming matrix for this string and pattern.
     * We will have pattern characters on top (as columns) and string characters
@@ -133,3 +133,4 @@ export default function regularExpressionMatching(string, pattern) {
 
   return matchMatrix[string.length][pattern.length];
 }
+module.exports = regularExpressionMatching;

@@ -1,6 +1,6 @@
-import HashTable from '../hash-table/HashTable';
+const HashTable = require('../hash-table/HashTable');
 
-export default class TrieNode {
+class TrieNode {
   /**
    * @param {string} character
    * @param {boolean} isCompleteWord
@@ -92,3 +92,4 @@ export default class TrieNode {
     return `${this.character}${isCompleteString}${childrenAsString}`;
   }
 }
+module.exports = TrieNode;

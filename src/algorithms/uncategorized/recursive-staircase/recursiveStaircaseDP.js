@@ -4,7 +4,7 @@
  * @param {number} stairsNum - Number of stairs to climb on.
  * @return {number} - Number of ways to climb a staircase.
  */
-export default function recursiveStaircaseDP(stairsNum) {
+function recursiveStaircaseDP(stairsNum) {
   if (stairsNum < 0) {
     // There is no way to go down - you climb the stairs only upwards.
     return 0;
@@ -31,3 +31,4 @@ export default function recursiveStaircaseDP(stairsNum) {
   // Return possible ways to get to the requested step.
   return steps[stairsNum];
 }
+module.exports = recursiveStaircaseDP;

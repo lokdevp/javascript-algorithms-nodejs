@@ -66,7 +66,7 @@ function getCycleWeight(adjacencyMatrix, verticesIndices, cycle) {
  * @param {Graph} graph
  * @return {GraphVertex[]}
  */
-export default function bfTravellingSalesman(graph) {
+function bfTravellingSalesman(graph) {
   // Pick starting point from where we will traverse the graph.
   const startVertex = graph.getAllVertices()[0];
 
@@ -102,3 +102,4 @@ export default function bfTravellingSalesman(graph) {
   // Return the solution.
   return salesmanPath;
 }
+module.exports = bfTravellingSalesman;

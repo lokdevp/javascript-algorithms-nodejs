@@ -1,5 +1,5 @@
-import ComplexNumber from '../complex-number/ComplexNumber';
-import bitLength from '../bits/bitLength';
+const ComplexNumber = require('../complex-number/ComplexNumber');
+const bitLength = require('../bits/bitLength');
 
 /**
  * Returns the number which is the flipped binary representation of input.
@@ -30,7 +30,7 @@ function reverseBits(input, bitsCount) {
  * @param {boolean} [inverse]
  * @return {ComplexNumber[]}
  */
-export default function fastFourierTransform(inputData, inverse = false) {
+function fastFourierTransform(inputData, inverse = false) {
   const bitsCount = bitLength(inputData.length - 1);
   const N = 1 << bitsCount;
 
@@ -75,3 +75,4 @@ export default function fastFourierTransform(inputData, inverse = false) {
 
   return output;
 }
+module.exports = fastFourierTransform;

@@ -3,7 +3,7 @@
  * @param {number} comboLength
  * @return {*[]}
  */
-export default function combineWithRepetitions(comboOptions, comboLength) {
+function combineWithRepetitions(comboOptions, comboLength) {
   // If the length of the combination is 1 then each element of the original array
   // is a combination itself.
   if (comboLength === 1) {
@@ -30,3 +30,4 @@ export default function combineWithRepetitions(comboOptions, comboLength) {
 
   return combos;
 }
+module.exports = combineWithRepetitions;

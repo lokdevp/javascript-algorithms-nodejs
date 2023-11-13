@@ -1,4 +1,4 @@
-import PriorityQueue from '../../../data-structures/priority-queue/PriorityQueue';
+const PriorityQueue = require('../../../data-structures/priority-queue/PriorityQueue');
 
 /**
  * @typedef {Object} ShortestPaths
@@ -12,7 +12,7 @@ import PriorityQueue from '../../../data-structures/priority-queue/PriorityQueue
  * @param {GraphVertex} startVertex - traversal start vertex.
  * @return {ShortestPaths}
  */
-export default function dijkstra(graph, startVertex) {
+function dijkstra(graph, startVertex) {
   // Init helper variables that we will need for Dijkstra algorithm.
   const distances = {};
   const visitedVertices = {};
@@ -78,3 +78,4 @@ export default function dijkstra(graph, startVertex) {
     previousVertices,
   };
 }
+module.exports = dijkstra;

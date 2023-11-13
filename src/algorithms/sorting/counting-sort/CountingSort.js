@@ -1,6 +1,6 @@
-import Sort from '../Sort';
+const Sort = require('../Sort');
 
-export default class CountingSort extends Sort {
+class CountingSort extends Sort {
   /**
    * @param {number[]} originalArray
    * @param {number} [smallestElement]
@@ -76,3 +76,4 @@ export default class CountingSort extends Sort {
     return sortedArray;
   }
 }
+module.exports = CountingSort;

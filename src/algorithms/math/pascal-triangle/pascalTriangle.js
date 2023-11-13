@@ -2,7 +2,7 @@
  * @param {number} lineNumber - zero based.
  * @return {number[]}
  */
-export default function pascalTriangle(lineNumber) {
+function pascalTriangle(lineNumber) {
   const currentLine = [1];
 
   const currentLineSize = lineNumber + 1;
@@ -14,3 +14,4 @@ export default function pascalTriangle(lineNumber) {
 
   return currentLine;
 }
+module.exports = pascalTriangle;

@@ -2,6 +2,7 @@
  * @param {number} degree
  * @return {number}
  */
-export default function degreeToRadian(degree) {
+function degreeToRadian(degree) {
   return degree * (Math.PI / 180);
 }
+module.exports = degreeToRadian;

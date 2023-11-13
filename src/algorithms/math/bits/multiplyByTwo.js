@@ -2,6 +2,7 @@
  * @param {number} number
  * @return {number}
  */
-export default function multiplyByTwo(number) {
+function multiplyByTwo(number) {
   return number << 1;
 }
+module.exports = multiplyByTwo;

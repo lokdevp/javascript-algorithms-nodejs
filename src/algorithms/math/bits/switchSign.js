@@ -3,6 +3,7 @@
  * @param {number} number
  * @return {number}
  */
-export default function switchSign(number) {
+function switchSign(number) {
   return ~number + 1;
 }
+module.exports = switchSign;

@@ -1,4 +1,4 @@
-export default class BloomFilter {
+class BloomFilter {
   /**
    * @param {number} size - the size of the storage.
    */
@@ -129,3 +129,4 @@ export default class BloomFilter {
     ];
   }
 }
+module.exports = BloomFilter;

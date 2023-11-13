@@ -103,7 +103,7 @@ function buildZArray(zString) {
  * @param {string} word
  * @return {number[]}
  */
-export default function zAlgorithm(text, word) {
+function zAlgorithm(text, word) {
   // The list of word's positions in text. Word may be found in the same text
   // in several different positions. Thus it is an array.
   const wordPositions = [];
@@ -130,3 +130,4 @@ export default function zAlgorithm(text, word) {
   // Return the list of word positions.
   return wordPositions;
 }
+module.exports = zAlgorithm;

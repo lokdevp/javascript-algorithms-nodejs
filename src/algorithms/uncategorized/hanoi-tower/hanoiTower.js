@@ -1,4 +1,4 @@
-import Stack from '../../../data-structures/stack/Stack';
+const Stack = require('../../../data-structures/stack/Stack');
 
 /**
  * @param {number} numberOfDiscs
@@ -58,7 +58,7 @@ function hanoiTowerRecursive({
  * @param {Stack} [withPole]
  * @param {Stack} [toPole]
  */
-export default function hanoiTower({
+function hanoiTower({
   numberOfDiscs,
   moveCallback,
   fromPole = new Stack(),
@@ -82,3 +82,4 @@ export default function hanoiTower({
     moveCallback,
   });
 }
+module.exports = hanoiTower;

@@ -1,4 +1,4 @@
-import Comparator from '../../../utils/comparator/Comparator';
+const Comparator = require('../../../utils/comparator/Comparator');
 
 /**
  * Binary search implementation.
@@ -9,7 +9,7 @@ import Comparator from '../../../utils/comparator/Comparator';
  * @return {number}
  */
 
-export default function binarySearch(sortedArray, seekElement, comparatorCallback) {
+function binarySearch(sortedArray, seekElement, comparatorCallback) {
   // Let's create comparator from the comparatorCallback function.
   // Comparator object will give us common comparison methods like equal() and lessThen().
   const comparator = new Comparator(comparatorCallback);
@@ -42,3 +42,4 @@ export default function binarySearch(sortedArray, seekElement, comparatorCallbac
   // Return -1 if we have not found anything.
   return -1;
 }
+module.exports = binarySearch;

@@ -2,7 +2,7 @@
  * @param {number} number
  * @return {number}
  */
-export default function integerPartition(number) {
+function integerPartition(number) {
   // Create partition matrix for solving this task using Dynamic Programming.
   const partitionMatrix = Array(number + 1).fill(null).map(() => {
     return Array(number + 1).fill(null);
@@ -55,3 +55,4 @@ export default function integerPartition(number) {
 
   return partitionMatrix[number][number];
 }
+module.exports = integerPartition;

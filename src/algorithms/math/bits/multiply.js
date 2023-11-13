@@ -1,7 +1,7 @@
-import multiplyByTwo from './multiplyByTwo';
-import divideByTwo from './divideByTwo';
-import isEven from './isEven';
-import isPositive from './isPositive';
+const multiplyByTwo = require('./multiplyByTwo');
+const divideByTwo = require('./divideByTwo');
+const isEven = require('./isEven');
+const isPositive = require('./isPositive');
 
 /**
  * Multiply two signed numbers using bitwise operations.
@@ -24,7 +24,7 @@ import isPositive from './isPositive';
  * @param {number} b
  * @return {number}
  */
-export default function multiply(a, b) {
+function multiply(a, b) {
   // If a is zero or b is zero or if both a and b are zeros then the production is also zero.
   if (b === 0 || a === 0) {
     return 0;
@@ -39,3 +39,4 @@ export default function multiply(a, b) {
 
   return isEven(b) ? multiplyByEven() : multiplyByOdd();
 }
+module.exports = multiply;

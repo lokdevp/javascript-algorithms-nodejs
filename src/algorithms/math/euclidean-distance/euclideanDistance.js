@@ -1,8 +1,8 @@
 /**
- * @typedef {import('../matrix/Matrix.js').Matrix} Matrix
+ * @typedef {require('../matrix/Matrix.js').Matrix} Matrix
  */
 
-import * as mtrx from '../matrix/Matrix';
+const mtrx = require('../matrix/Matrix');
 
 /**
  * Calculates the euclidean distance between 2 matrices.
@@ -25,4 +25,4 @@ const euclideanDistance = (a, b) => {
   return Number(Math.sqrt(squaresTotal).toFixed(2));
 };
 
-export default euclideanDistance;
+module.exports = euclideanDistance;

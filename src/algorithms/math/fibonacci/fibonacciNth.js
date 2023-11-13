@@ -4,7 +4,7 @@
  * @param n
  * @return {number}
  */
-export default function fibonacciNth(n) {
+function fibonacciNth(n) {
   let currentValue = 1;
   let previousValue = 0;
 
@@ -23,3 +23,4 @@ export default function fibonacciNth(n) {
 
   return currentValue;
 }
+module.exports = fibonacciNth;

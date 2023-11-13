@@ -39,4 +39,4 @@ const dqBestTimeToBuySellStocks = (prices, visit = () => {}) => {
   return recursiveBuyerSeller(buy, day);
 };
 
-export default dqBestTimeToBuySellStocks;
+module.exports = dqBestTimeToBuySellStocks;
